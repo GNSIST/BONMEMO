@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONOTEPAD</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-storage-api/1.9.4/jquery.storageapi.min.js" integrity="sha512-rZXftKfJtDmBFPfxFYFjwGM3QadaGJCrOpdaOh3JPkk2wJXSghhUa7bn9CCn7R/UPW29aMuWY0JDnbZEiUYxgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+   <link rel="stylesheet" href="style.css"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> 
+   
+</head>
+<body>
+    <div id="gnb">
+        <div class="logo">BON MEMO</div>
+    </div>
+        <div id="content">
+            <div class="dropdown">
+                <button class="dropbtn" id="dark-button"><i class="fas fa-eye"></i><span></span></button>
+                <div class="dropdown-content" id="dark-mode">
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" id="text-button"><i class="fas fa-pen-to-square"></i> Font</button>
+                <div class="dropdown-content" id="font-list">
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" id="size-button"><i class="fas fa-font"></i> Size </button>
+                <div class="dropdown-content" id="font-size">
+                    <a href="#" data-size="8">8px</a>
+                    <a href="#" data-size="10">10px</a>
+                    <a href="#" data-size="12">12px</a>
+                    <a href="#" data-size="14">14px</a>
+                    <a href="#" data-size="16">16px</a>
+                    <a href="#" data-size="18">18px</a>
+                    <a href="#" data-size="24">24px</a>
+                    <a href="#" data-size="36">36px</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">File ▼</button>
+                <div class="dropdown-content">
+                    <a href="#" id="open-link"><i class="fas fa-folder-open white-icon"></i>  Open</a>
+                    <a href="#" id="save-link"><i class="fas fa-download white-icon"></i>  Save</a>
+                    <a href="#" id="print-link"><i class="fas fa-print white-icon"></i>  Print</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">  View ▼</button>
+                <div class="dropdown-content">
+                    <a href="#" id="fullscreen-link"> <i class="fas fa-expand white-icon"></i>  Fullscreen</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" id="helpbtn">Help ▼</button>
+                <div class="dropdown-content">
+                  <a href="#">Help</a>
+                </div>
+            </div>
+        </div>  
+        
+        <div id="btn-box">
+
+            <div class="image-button" id="button1">
+                <i class="fas fa-folder-open"></i></a>
+                </div>
+               <div class="image-button"id="button2">
+                <i class="fas fa-download"></i>
+                </div>
+            <div class="image-button" id="button3">
+                <i class="fas fa-share-alt"></i>
+                </div>
+            <div class="image-button" id="button4">
+                <i class="fas fa-trash-alt"></i>
+                </div>
+            <div class="image-button" id="button5">
+                <i class="fas fa-undo-alt"></i>
+                </div>
+            <div class="image-button" id="button6">
+                <i class="fas fa-redo-alt"></i>
+                </div>
+            <div class="image-button" id="button7">
+                <i class="fas fa-search-plus"></i>
+                </div>
+            <div class="image-button" id="button8">
+                <i class="fas fa-search-minus"></i>
+                </div>
+        </div>
+     
+        <div clss="container">
+        <textarea id="document-input" class="tarea" placeholder="내용을 입력해주세요"></textarea>
+        </div>
+    <div id="footer">Copyright © 2023 BON </div>
+    
+</body>
+</html>

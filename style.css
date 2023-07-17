@@ -1,0 +1,149 @@
+      html,body{box-shadow:3px 3px #b6b6b6; box-sizing: border-box; border:1px solid #b6b6b6;
+      }
+
+      div,textarea{box-sizing:border-box;
+      }
+
+      #gnb{
+    width:100%;height:50px;border-bottom: 1px solid #b6b6b6;
+      }
+
+      .logo{width:150px; text-align: center; line-height: 50px;margin:0 auto; font-size: 24px;
+      }
+      
+      .tarea{width: 100%;height:500px; background-color:
+         #fafcbd;font-size:16px;padding:20px; margin:0px; border:1px solid #b6b6b6; 
+         border-left:none; border-right:none; 
+      }
+
+      #footer{font-size: 12px; color:#666;}
+       .image-button 
+        {box-sizing: border-box;
+        display: inline-flex; 
+        padding: 4px 8px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+        
+      .image-button img{
+        width: 30px ;  
+      }
+
+      .dropbtn {
+        background-color: #fff;
+        color: #000;
+        padding: 4px 8px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative; /*중요*/
+        display: inline-block;/*중요*/
+      }
+
+      .dropdown-content {
+        display: none;/*중요:리스트들이 안보여야 하니깐 none값을 주었다*/
+        position: absolute;/*중요*/
+        background-color: #f5f3f0;
+        border:0.5px solid #ccc;
+        min-width: 150px;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd; color:#fff}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+
+      #content{border-bottom: 1px solid #b6b6b6;}
+
+      .white-icon{color:#000
+      }
+
+      .font-preview {
+       display: inline-block;
+       padding: 5px;
+       border: 1px solid #ccc;
+      }
+
+       /*폰트*/
+       .dropdown-content {
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      
+      .dropdown-content a {
+        
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .dropdown-content a:last-child {
+        border-bottom: none;
+      }
+      
+      .font-name {
+        flex: 1;
+        font-weight: bold;
+      }
+      
+      .font-style {
+        flex: 1;
+        font-family: inherit;
+        text-align: right;
+        font-size: 12px;
+        color: #777;
+      }
+      
+      .dropdown-content.scroll-active {
+        border-bottom: 1px solid #ccc;
+      }
+
+      #helpbtn{border-right: 1px solid #b6b6b6;
+      }
+
+      #dark-button{border-right: 1px solid #b6b6b6;
+      }
+
+      #size-button{border-right:1px solid #b6b6b6; 
+      }
+
+      .image-button {
+        transform: scale(2);
+        margin: 10px;
+      }
+     
+      #btn-box {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .image-button.active {
+        background-color: #fff;
+        color: #000;
+        opacity: 0.5;
+      }
+
+
+      
+
+      
+      
+     
+      
+     
+
+
+
+      
+      
+
+
+
