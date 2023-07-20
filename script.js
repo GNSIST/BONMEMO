@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // 버튼 1
   $('#button1').click(function(e) {
     e.preventDefault();
 
@@ -78,18 +77,22 @@ $(document).ready(function() {
     $(this).removeClass('active');
   });
 
-  // 버튼 5
-  var undoStack = [];
+  // 버튼 5,6//
+  var undoStack = []; // 작업 이력을 저장할 스택
+  var redoStack = []; // 취소된 작업 이력을 저장할 스택
 
+  // 버튼 5 (Undo)
   $('#button5').click(function() {
     if (undoStack.length > 0) {
       var previousContent = undoStack.pop();
+      redoStack.push($('#document-input').val()); // 현재 내용을 Redo 스택에 저장
       $('#document-input').val(previousContent);
     }
   });
 
   $('#document-input').on('input', function() {
     var currentContent = $(this).val();
+    redoStack = []; // 새로운 입력이 들어오면 Redo 스택 초기화
     undoStack.push(currentContent);
   });
 
@@ -99,22 +102,13 @@ $(document).ready(function() {
     $(this).removeClass('active');
   });
 
-  // 버튼 6
-  var undoStack = [];
-  var redoStack = [];
-
+  // 버튼 6 (Redo)
   $('#button6').click(function() {
     if (redoStack.length > 0) {
-      var previousContent = redoStack.pop();
-      redoStack.push(previousContent);
-      $('#document-input').val(previousContent);
+      var nextContent = redoStack.pop();
+      undoStack.push($('#document-input').val()); // 현재 내용을 Undo 스택에 저장
+      $('#document-input').val(nextContent);
     }
-  });
-
-  $('#document-input').on('input', function() {
-    var currentContent = $(this).val();
-    redoStack.push(currentContent);
-    undoStack = [];
   });
 
   $('#button6').hover(function() {
@@ -122,7 +116,6 @@ $(document).ready(function() {
   }, function() {
     $(this).removeClass('active');
   });
-
   // 버튼 7, 버튼 8
   var currentZoom = 100;
 
